@@ -6,11 +6,13 @@ class HappyMeal:
     self.side = side
     self.toy = toy
 
+  def __repr__(self):
+    return "A meal consisting of a {}, {}, and {}".format(self.drink, self.main, self.side)
   def set_price(self, price):
     self.price = price
 
   def calories(self):
-    return self.drink.calories + self.side.calories + self.main.calories()
+    return self.drink.calories() + self.side.calories() + self.main.calories()
 
   def to_string(self):
     return "This happy meal is composed of {}, {}, {}, and a {}".format(self.drink, self.main, self.side,self.toy)

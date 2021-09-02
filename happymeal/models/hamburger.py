@@ -6,12 +6,12 @@ class Hamburger:
     self.condiments = condiments
 
   def __repr__(self):
-    self.name
+    return self.name
 
   def calories(self):
     sum = 0
     for c in self.condiments:
       if hasattr(c, 'calories'):
         # print('cals: ', c.calories)
-        sum = sum + c.calories
+        sum = sum + c.calories()
     return self.base_calories + sum

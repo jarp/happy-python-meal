@@ -30,5 +30,6 @@ meal = HappyMeal(drink=sprite, main=hamburger, side=fries, toy=toy)
 # output some info to the console:
 
 print("i have just created a happy meal!")
+print(meal)
 print("this happy meal has {} calories".format(meal.calories()) )
 
