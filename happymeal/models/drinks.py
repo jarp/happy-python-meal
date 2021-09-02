@@ -5,7 +5,7 @@ class Drink:
     self.calories = 0
     self.ice_ratio = 0
 
-  def to_s():
+  def __repr__(self):
     return self.syrup
 
   def calories(self):
