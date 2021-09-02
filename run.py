@@ -5,6 +5,7 @@ from happymeal.models.drinks import *
 from happymeal.models.hamburger import Hamburger
 from happymeal.models.toy import Toy
 from happymeal.models.happy_meal import HappyMeal
+from happymeal.models.cockroach import Cockroach
 
 os.system("clear")
 print("testing out the happy meal models using inheritance and composition\n\n")
@@ -18,6 +19,7 @@ condiments = []
 condiments.append(Condiment("tomato", 10))
 condiments.append(Condiment("Lettuce", 10))
 condiments.append(Condiment("Mayo", 50))
+condiments.append(Cockroach())
 
 hamburger = Hamburger(condiments=condiments)
 
